@@ -1,8 +1,14 @@
 # Finnair_Assignment
  
-Endpoint:
-GET /passengers?flightNumber=<flight-number>&departureDate=<departure-date>
-Response body:
+## Endpoint:
+
+
+### GET /passengers?flightNumber={flight-number}&departureDate={departure-date}
+ 
+ 
+### Response body:
+
+
 [
 {
 ”passengerId”: ”string”,
@@ -12,9 +18,17 @@ Response body:
 },
 …
 ]
-Endpoint:
-GET /passengers/<passenger-id>
-Response body:
+
+
+## Endpoint:
+
+
+### GET /passengers/{passenger-id}
+ 
+ 
+### Response body:
+
+
 {
 ”passengerId”: ”string”,
 ”firstName”: “string”,
@@ -32,6 +46,12 @@ Response body:
 …
 ]
 }
-Notes:
+
+
+## Notes:
+
+
 • A booking can have multiple passengers, and a passenger can be in one booking.
+
+
 • A booking can have multiple flights, and a flight can have multiple bookings.
